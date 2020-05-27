@@ -9,8 +9,7 @@
 	
     <!-- Define your beans here -->
     
-    <bean id="myMizan" class="com.emre.springdemoprojectLiteralValuesInjection.ReportingMizan">
-    </bean>
+    <bean id="myMizan" class="com.emre.springdemoprojectLiteralValuesInjection.ReportingMizan"></bean>
     
     <bean id="myReport" class="com.emre.springdemoprojectLiteralValuesInjection.ReportCredits">
     	<constructor-arg ref="myMizan"/>
