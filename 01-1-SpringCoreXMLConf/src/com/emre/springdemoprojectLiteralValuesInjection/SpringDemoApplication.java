@@ -36,13 +36,21 @@ public class SpringDemoApplication {
 		//retrieve bean from container
 		  // context'in arka planda yaptığı işlem=
 		  // id="myReportTreasury" class="ReportTreasury" ==> Report theReport = new ReportTreasury();
-		Report theReport = context.getBean("myReportTreasury",ReportTreasury.class);
+		ReportTreasury theReport = context.getBean("myReportTreasury",ReportTreasury.class);
 		
 		
 		
 		System.out.println(theReport.sayMyName());
 		
 		System.out.println(theReport.getAssetSum());
+		
+		//calling new methods we have injected as a literal value
+		
+		System.out.println("report code is : " + theReport.getReportCode());
+		
+		System.out.println("report name is : " + theReport.getReportName() );
+		
+		System.out.println("report version is : " + theReport.getReportVersion());
 		
 		
 		//close the context
