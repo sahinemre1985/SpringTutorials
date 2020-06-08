@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<!-- load the properties file: report.properties -->
+	<context:property-placeholder location="classpath:report.properties"/>
+	
+    <!-- Define your beans here -->
+    
+    <bean id="myMizan" class="com.emre.springdemoprojectInjectValueFromProperties.ReportingMizan"></bean>
+    
+    <bean id="myReport" class="com.emre.springdemoprojectInjectValueFromProperties.ReportCredits">
+    	<constructor-arg ref="myMizan"/>
+    </bean>
+    
+	<bean id="myReportTreasury"
+		class="com.emre.springdemoprojectInjectValueFromProperties.ReportTreasury">
+		
+			<!-- set up setter injection name automaticaly converted to a set method name which is mizan = setMizan -->
+			<property name="mizan" ref="myMizan"/>
+			
+			<!-- injecting literal values from properties file-->
+
+			<property name="reportName" value="${foo.reportName}"/>
+			<property name="reportCode" value="${foo.reportCode}"/>
+			<property name="reportVersion" value="${foo.reportVersion}"/>
+	
+    </bean>
+</beans>
