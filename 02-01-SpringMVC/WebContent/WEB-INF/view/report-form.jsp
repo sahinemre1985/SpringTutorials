@@ -32,15 +32,18 @@
 	<br><br>
 	
 	Report Type :
-	<form:radiobutton path="reportType" value="Kredi"/>
-	<form:radiobutton path="reportType" value="Mevduat"/>
-	<form:radiobutton path="reportType" value="Hazine"/>
-	<form:radiobutton path="reportType" value="Mizan"/>
+	Kredi <form:radiobutton path="reportType" value="Kredi"/>
+	Mevduat <form:radiobutton path="reportType" value="Mevduat"/>
+	Hazine <form:radiobutton path="reportType" value="Hazine"/>
+	Mizan <form:radiobutton path="reportType" value="Mizan"/>
 	
 	<br><br>
 	
 	Report Owner(s) :
 	
+	Ic Kontrol <form:checkbox path="reportOwner" value ="Ic Kontrol"/>
+	Muhasebe <form:checkbox path="reportOwner" value="Muhasebe"/>
+	Risk Yonetimi <form:checkbox path="reportOwner" value = "Risk Yonetimi"/>
 	
 	<input type="submit" value="Submit" />
 	

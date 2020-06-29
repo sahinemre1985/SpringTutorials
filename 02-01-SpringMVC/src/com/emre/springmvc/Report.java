@@ -17,6 +17,9 @@ public class Report {
 	//for radiobutton
 	private String reportType;
 	
+	//for checkboxes, can be multiple.
+	private String[] reportOwner;
+	
 	public Report() {
 		
 		countryOptions= new LinkedHashMap<>();
@@ -62,6 +65,14 @@ public class Report {
 
 	public void setReportType(String reportType) {
 		this.reportType = reportType;
+	}
+
+	public String[] getReportOwner() {
+		return reportOwner;
+	}
+
+	public void setReportOwner(String[] reportOwner) {
+		this.reportOwner = reportOwner;
 	}
 
 
