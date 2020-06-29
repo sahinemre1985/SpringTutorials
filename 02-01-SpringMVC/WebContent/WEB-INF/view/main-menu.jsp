@@ -9,6 +9,11 @@
 	<h2>Spring MVC Demo - Home Page</h2>
 	
 	<a href="esm/showForm">Go to Hello World Form</a>
+	
+	<br>
+	
+	<a href="rpm/showForm">Go to Report Form</a>
+	
 </body>
 
 </html>
