@@ -24,11 +24,8 @@
 	
 	<form:select path="country">
 	
-		<form:option value="Brazil" label="BR"/>
-		<form:option value="Germany" label="DE"/>
-		<form:option value="Turkey" label="TR"/>
-		<form:option value="United Kingdom" label="UK"/>
-		<form:option value="UnitedStates" label="US"/>
+		<form:options items="${report.countryOptions}"/>
+
 		
 	</form:select>
 	
