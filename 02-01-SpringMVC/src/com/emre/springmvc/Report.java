@@ -14,6 +14,9 @@ public class Report {
 	private LinkedHashMap<String,String> countryOptions;
 
 	
+	//for radiobutton
+	private String reportType;
+	
 	public Report() {
 		
 		countryOptions= new LinkedHashMap<>();
@@ -51,6 +54,14 @@ public class Report {
 
 	public LinkedHashMap<String, String> getCountryOptions() {
 		return countryOptions;
+	}
+
+	public String getReportType() {
+		return reportType;
+	}
+
+	public void setReportType(String reportType) {
+		this.reportType = reportType;
 	}
 
 

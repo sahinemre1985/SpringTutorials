@@ -32,6 +32,10 @@
 	<br><br>
 	
 	Report Type :
+	<form:radiobutton path="reportType" value="Kredi"/>
+	<form:radiobutton path="reportType" value="Mevduat"/>
+	<form:radiobutton path="reportType" value="Hazine"/>
+	<form:radiobutton path="reportType" value="Mizan"/>
 	
 	<br><br>
 	
