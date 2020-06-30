@@ -9,7 +9,15 @@
 <body>
 
 The customer is confirmed: ${customer.firstName} ${customer.lastName}
-	
+
+<br><br>
+
+Rating Note is: ${customer.ratingNote}
+
+<br><br>
+
+Postal Code is: ${customer.postalCode}
+
 </body>
 
 </html>
