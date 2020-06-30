@@ -14,6 +14,10 @@
 	
 	<a href="rpm/showForm">Go to Report Form</a>
 	
+	<br>
+	
+	<a href="customer/showForm">Customer Form</a>
+	
 </body>
 
 </html>
