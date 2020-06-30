@@ -18,6 +18,10 @@ Rating Note is: ${customer.ratingNote}
 
 Postal Code is: ${customer.postalCode}
 
+<br><br>
+
+Model Code is: ${customer.modelCode}
+
 </body>
 
 </html>

@@ -39,6 +39,11 @@
 	<form:errors path="postalCode" cssClass="error"  />
 	
 	<br><br>
+
+	Model Code (*): <form:input path="modelCode"/>
+	<form:errors path="modelCode" cssClass="error"  />
+	
+	<br><br>
 		
 	<input type="submit" value="Submit" />
 	
